@@ -1,16 +1,10 @@
 name: Android CI
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
-    paths:
-      - '.github/workflows/*.yml'
-  workflow_dispatch:
+    branches: [ master ]
 
 jobs:
   build:
